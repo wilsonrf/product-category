@@ -1,0 +1,5 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "checkstyle.configurationFile": "google_checks",
+    "checkstyle.autocheck": true
+}
