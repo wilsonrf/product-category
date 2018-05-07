@@ -16,6 +16,8 @@ public class OfferPrice implements Serializable {
 
     private BigDecimal priceInCents;
 
+    public OfferPrice(){}
+
     public OfferPrice(String currency, BigDecimal priceInCents) {
         this.currency = currency;
         this.priceInCents = priceInCents;
