@@ -16,8 +16,6 @@ public class Currency {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
-
     private String isoCode;
 
     private BigDecimal eurConversionFactor;
@@ -28,14 +26,6 @@ public class Currency {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getIsoCode() {
