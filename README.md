@@ -26,7 +26,7 @@ gradle startWiremocks
 gradle bootRun -Dspring.profiles.active=default
 ```
 
-## Running on production, using openExchangeRate.org and a local mariadb
+## Running on production, using a local mariadb
 
 ### RUN mariadb
 ```
