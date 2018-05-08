@@ -44,3 +44,32 @@ gradle bootRun -Dspring.profiles.active=production -Dclient=fixer
 ```
 gradle bootRun -Dspring.profiles.active=production -Dclient=oxr
 ```
+
+## Create a Category
+POST /category
+```
+{ "name": "Category One" }
+```
+### Create a SubCategory of a Category
+POST /category/{id}/children
+```
+{ "name": "Category Two" }
+```
+## Create a Product
+POST /product
+```
+{
+	"title": "Product 1",
+    "description": "Product 1",
+    "category": 2
+}
+```
+## Create a Offer of a Product
+POST /product/{id}/offer
+```
+{
+	"sku": "ABC1",
+    "priceInCents": 1000,
+    "currency": "BRL"
+}
+```
