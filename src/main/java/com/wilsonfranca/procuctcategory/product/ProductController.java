@@ -8,6 +8,7 @@ import org.springframework.data.web.PagedResourcesAssembler;
 import org.springframework.hateoas.PagedResources;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -71,5 +72,16 @@ public class ProductController {
                         .created(URI.create(resource.getId().getHref()))
                         .body(resource))
                 .orElse(ResponseEntity.badRequest().build());
+    }
+
+    @PreAuthorize("hasRole('SUPER')")
+    @RequestMapping(value = "{id}", method = RequestMethod.DELETE)
+    public HttpEntity<?> delete(@PathVariable Long id) {
+        try {
+            productService.delete(id);
+            return ResponseEntity.noContent().build();
+        } catch (Exception e ) {
+            return ResponseEntity.badRequest().build();
+        }
     }
 }

@@ -5,6 +5,8 @@ import org.springframework.hateoas.Link;
 import org.springframework.hateoas.mvc.ControllerLinkBuilder;
 import org.springframework.hateoas.mvc.ResourceAssemblerSupport;
 
+import java.math.BigDecimal;
+
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 /**
@@ -39,7 +41,14 @@ public class OfferResourceAssembler extends ResourceAssemblerSupport<Offer, Offe
 
         offerResource.setSku(entity.getSku());
         offerResource.setAvailable(entity.getAvailable());
-        offerResource.setCurrency(entity.getPrice().getCurrency());
+        offerResource.setCurrency(entity.getPrice().getCurrency().getIsoCode());
+
+        if (entity.getPrice().getCurrency().getIsoCode() != "EUR") {
+            BigDecimal priceInEuros = entity.getPrice().getPriceInCents()
+                    .multiply(entity.getPrice().getCurrency().getEurConversionFactor());
+            offerResource.setPriceInEurosCents(priceInEuros);
+        }
+
         offerResource.setPriceInCents(entity.getPrice().getPriceInCents());
 
         Link product = ControllerLinkBuilder.linkTo(

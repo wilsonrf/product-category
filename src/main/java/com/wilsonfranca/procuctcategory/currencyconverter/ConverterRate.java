@@ -1,9 +1,11 @@
 package com.wilsonfranca.procuctcategory.currencyconverter;
 
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.Id;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.time.Instant;
 
 /**
@@ -13,11 +15,12 @@ import java.time.Instant;
 public class ConverterRate {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String from;
+    private String source;
 
-    private String to;
+    private String target;
 
     @CreatedDate
     private Instant dateCreated;
@@ -30,9 +33,9 @@ public class ConverterRate {
 
     public ConverterRate(){}
 
-    public ConverterRate(String from, String to, Double amount, Double rate, Long timestamp) {
-        this.from = from;
-        this.to = to;
+    public ConverterRate(String source, String target, Double amount, Double rate, Long timestamp) {
+        this.source = source;
+        this.target = target;
         this.amount = amount;
         this.rate = rate;
         this.rateDate = Instant.ofEpochSecond(timestamp);
@@ -46,20 +49,20 @@ public class ConverterRate {
         this.id = id;
     }
 
-    public String getFrom() {
-        return from;
+    public String getSource() {
+        return source;
     }
 
-    public void setFrom(String from) {
-        this.from = from;
+    public void setSource(String source) {
+        this.source = source;
     }
 
-    public String getTo() {
-        return to;
+    public String getTarget() {
+        return target;
     }
 
-    public void setTo(String to) {
-        this.to = to;
+    public void setTarget(String target) {
+        this.target = target;
     }
 
     public Instant getDateCreated() {

@@ -1,6 +1,7 @@
 package com.wilsonfranca.procuctcategory.configuration;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /**
@@ -8,6 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  */
 @Configuration
 @EnableJpaRepositories(basePackages = {"com.wilsonfranca.procuctcategory.category",
-        "com.wilsonfranca.procuctcategory.product", "com.wilsonfranca.procuctcategory.currency"})
+        "com.wilsonfranca.procuctcategory.product", "com.wilsonfranca.procuctcategory.currency", "com.wilsonfranca.procuctcategory.currencyconverter"})
+@EnableJpaAuditing
 public class JpaConfiguration {
 }

@@ -42,7 +42,6 @@ public class OfferController {
         Page<Offer> offers = offerService.getOffers(productId, pageable);
 
         if(offers.hasContent()) {
-            //TODO if is not EUR, convert
             return ResponseEntity.ok(pagedResourcesAssembler.toResource(offers, new OfferResourceAssembler()));
         } else {
             return ResponseEntity.notFound().build();

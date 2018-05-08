@@ -1,6 +1,7 @@
 package com.wilsonfranca.procuctcategory.product.offer;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.hateoas.ResourceSupport;
 
@@ -24,6 +25,12 @@ public class OfferResource extends ResourceSupport {
 
     @Size(min = 3, max = 3)
     private String currency;
+
+    @Min(1)
+    private BigDecimal priceInEurosCents;
+
+    @JsonSerialize(using = OfferPriceSerializer.class)
+    private BigDecimal priceToDisplay;
 
     public String getSku() {
         return sku;
@@ -55,5 +62,30 @@ public class OfferResource extends ResourceSupport {
 
     public void setCurrency(String currency) {
         this.currency = currency;
+    }
+
+    public boolean isAvailable() {
+        return available;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+
+    public BigDecimal getPriceInEurosCents() {
+        return priceInEurosCents;
+    }
+
+    public void setPriceInEurosCents(BigDecimal priceInEurosCents) {
+        this.priceInEurosCents = priceInEurosCents;
+        setPriceToDisplay(priceInEurosCents);
+    }
+
+    public BigDecimal getPriceToDisplay() {
+        return priceToDisplay;
+    }
+
+    public void setPriceToDisplay(BigDecimal priceToDisplay) {
+        this.priceToDisplay = priceToDisplay;
     }
 }

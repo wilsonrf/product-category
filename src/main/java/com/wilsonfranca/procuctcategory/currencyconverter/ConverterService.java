@@ -28,11 +28,13 @@ public class ConverterService {
         this.converterRateService = converterRateService;
     }
 
-    public Optional<ConverterRate> lastest(String from, String to, Double amount) {
+    public Optional<ConverterRate> lastest(String source, String target, Double amount) {
+
         ConverterRate rate = null;
+
         try {
 
-            rate = currencyConverterClient.lastest(from, to, amount);
+            rate = currencyConverterClient.lastest(source, target, amount);
 
             if (Objects.nonNull(rate)) {
                 ConverterRate saved = converterRateService.save(rate);
@@ -40,8 +42,8 @@ public class ConverterService {
             }
 
         } catch (Exception e) {
-            logger.warn("Could not get the latest currency rate from EUR! We will try to use an outdated one!");
-            return converterRateService.findLastRate(from);
+            logger.warn("Could not get the latest currency rate from EUR! We will try to use an outdated one!", e);
+            return converterRateService.findLastRate(source);
         }
 
         return Optional.ofNullable(rate);

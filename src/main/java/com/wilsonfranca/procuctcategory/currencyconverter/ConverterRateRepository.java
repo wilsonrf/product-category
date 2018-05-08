@@ -11,6 +11,6 @@ import java.util.Optional;
 public interface ConverterRateRepository extends CrudRepository<ConverterRate, Long>,
         PagingAndSortingRepository<ConverterRate, Long> {
 
-    public Optional<ConverterRate> findFirstByFromByDateCreated(String currency);
+    public Optional<ConverterRate> findFirstBySourceOrderByDateCreatedDesc(String currency);
 
 }

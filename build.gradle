@@ -1,6 +1,7 @@
 buildscript {
 	ext {
 		springBootVersion = '1.5.12.RELEASE'
+		wiremockVersion = '2.14.0'
 	}
 	repositories {
 		mavenCentral()
@@ -22,15 +23,35 @@ repositories {
 	mavenCentral()
 }
 
+configurations {
+	wiremock
+}
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-hateoas')
-//	compile('org.springframework.boot:spring-boot-starter-security')
+	compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	runtime('org.springframework.boot:spring-boot-devtools')
 	runtime('mysql:mysql-connector-java')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.security:spring-security-test')
+
+	//wiremocks local
+	wiremock("com.github.tomakehurst:wiremock-standalone:$wiremockVersion")
 }
+
+task copyWiremockStandalone(type: Copy) {
+	from configurations.wiremock
+	into "$buildDir/wiremock"
+}
+
+task startWiremock(type: JavaExec) {
+	def rootDir = sourceSets.test.resources.srcDirs.find { it != null }
+	def file = "$buildDir/wiremock/wiremock-standalone-$wiremockVersion"+'.jar'
+	main = "-jar"
+	args = [file, "--root-dir", "$rootDir", "--port", "9090", "fork", true]
+}
+
+startWiremock.dependsOn copyWiremockStandalone

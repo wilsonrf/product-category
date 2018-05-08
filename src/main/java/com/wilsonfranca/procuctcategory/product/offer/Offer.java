@@ -1,5 +1,6 @@
 package com.wilsonfranca.procuctcategory.product.offer;
 
+import com.wilsonfranca.procuctcategory.currency.Currency;
 import com.wilsonfranca.procuctcategory.product.Product;
 
 import javax.persistence.*;
@@ -66,7 +67,7 @@ public class Offer {
         this.price = price;
     }
 
-    public void price(String currency, BigDecimal priceInCents) {
+    public void price(Currency currency, BigDecimal priceInCents) {
         OfferPrice offerPrice = new OfferPrice(currency, priceInCents);
         this.setPrice(offerPrice);
     }

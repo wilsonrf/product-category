@@ -46,4 +46,8 @@ public class ProductService {
         Product persisted = productRepository.save(product);
         return Optional.ofNullable(persisted);
     }
+
+    public void delete(Long id) {
+        productRepository.delete(id);
+    }
 }

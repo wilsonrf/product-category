@@ -23,6 +23,6 @@ public class ConverterRateService {
     }
 
     public Optional<ConverterRate> findLastRate(String currency) {
-        return converterRateRepository.findFirstByFromByDateCreated(currency);
+        return converterRateRepository.findFirstBySourceOrderByDateCreatedDesc(currency);
     }
 }

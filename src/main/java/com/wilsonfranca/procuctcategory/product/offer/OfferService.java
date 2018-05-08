@@ -1,5 +1,7 @@
 package com.wilsonfranca.procuctcategory.product.offer;
 
+import com.wilsonfranca.procuctcategory.currency.Currency;
+import com.wilsonfranca.procuctcategory.currency.CurrencyNotFoundException;
 import com.wilsonfranca.procuctcategory.currency.CurrencyService;
 import com.wilsonfranca.procuctcategory.product.Product;
 import com.wilsonfranca.procuctcategory.product.ProductNotFoundException;
@@ -9,18 +11,14 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
 import java.util.Objects;
 import java.util.Optional;
-import java.util.concurrent.CompletableFuture;
 
 /**
  * Created by wilson on 05/05/18.
  */
 @Service
 public class OfferService {
-
-    public static final String EUR = "EUR";
 
     private OfferRepository offerRepository;
 
@@ -49,20 +47,17 @@ public class OfferService {
         Optional<Product> optional = productService.getProductById(productId);
         Product product = optional.filter(Objects::nonNull)
                 .orElseThrow(ProductNotFoundException::new);
+
+        // check if currency is allowed
+        Currency currency = currencyService.findByCode(offerResource.getCurrency())
+                .orElseThrow(CurrencyNotFoundException::new);
+
         Offer offer = new Offer();
         offer.setAvailable(offerResource.getAvailable());
-        offer.price(offerResource.getCurrency(), offerResource.getPriceInCents());
+        offer.price(currency, offerResource.getPriceInCents());
         offer.setProduct(product);
         offer.setSku(offerResource.getSku());
         Offer persisted = offerRepository.save(offer);
-
-        // Create a new currency if it not exists
-        CompletableFuture.runAsync(() -> {
-            if (persisted.getPrice().getCurrency() != EUR) {
-                currencyService.findAndUpdateCurrency(persisted.getPrice().getCurrency()
-                        , BigDecimal.ZERO);
-            }
-        });
 
         return Optional.ofNullable(persisted);
     }
