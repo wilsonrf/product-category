@@ -5,7 +5,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
 import java.util.Objects;
 import java.util.Optional;
 
@@ -47,10 +46,6 @@ public class ConverterService {
         }
 
         return Optional.ofNullable(rate);
-    }
-
-    public ConverterRate historical(String from, String to, Double amount, Date date) {
-        return currencyConverterClient.historical(from, to, amount, date.toInstant());
     }
 
     public ConverterRate save(ConverterRate converterRate) {

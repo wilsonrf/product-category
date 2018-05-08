@@ -1,7 +1,7 @@
 package com.wilsonfranca.procuctcategory.ext.openexchangerate;
 
 /**
- * Created by wilson on 27/02/18.
+ * Created by wilson on 06/05/18.
  */
 public class OpenExchangeError {
 

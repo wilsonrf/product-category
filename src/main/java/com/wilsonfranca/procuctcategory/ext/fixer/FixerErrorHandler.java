@@ -1,7 +1,9 @@
-package com.wilsonfranca.procuctcategory.ext.openexchangerate;
+package com.wilsonfranca.procuctcategory.ext.fixer;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.wilsonfranca.procuctcategory.currencyconverter.exception.*;
+import com.wilsonfranca.procuctcategory.currencyconverter.exception.ClientException;
+import com.wilsonfranca.procuctcategory.currencyconverter.exception.NotFoundException;
+import com.wilsonfranca.procuctcategory.currencyconverter.exception.UnauthorizedException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -11,9 +13,9 @@ import org.springframework.web.client.ResponseErrorHandler;
 import java.io.IOException;
 
 /**
- * Created by wilson on 06/05/18.
+ * Created by wilson on 08/05/18.
  */
-public class OpenExchangeErrorHandler implements ResponseErrorHandler {
+public class FixerErrorHandler implements ResponseErrorHandler {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -67,21 +69,16 @@ public class OpenExchangeErrorHandler implements ResponseErrorHandler {
 
         ObjectMapper objectMapper = new ObjectMapper();
 
-        OpenExchangeError error = null;
+        FixerError error = null;
 
         try {
 
             logger.warn("Client error [{}] [{}] [{}]", response.getStatusText(), response.getStatusCode(), response.getBody());
 
-            error = objectMapper.readValue(response.getBody(), OpenExchangeError.class);
+            error = objectMapper.readValue(response.getBody(), FixerError.class);
 
-            if("invalid_date".equalsIgnoreCase(error.getMessage())) {
-                throw new InvalidDateException();
-            } else if ("not_available".equalsIgnoreCase(error.getMessage())) {
-                throw new NotAvailableException();
-            } else {
-                throw new ClientException();
-            }
+            logger.info("Fixer error [{}]", error);
+            throw new ClientException();
 
         } catch (IOException e) {
             throw new ClientException();

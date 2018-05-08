@@ -33,13 +33,17 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-hateoas')
 	compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.apache.httpcomponents:httpclient:4.5')
 	runtime('org.springframework.boot:spring-boot-devtools')
 	runtime('mysql:mysql-connector-java')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.security:spring-security-test')
+	testCompile("com.github.tomakehurst:wiremock:${wiremockVersion}")
 
-	//wiremocks local
+	//local wiremock
 	wiremock("com.github.tomakehurst:wiremock-standalone:$wiremockVersion")
+
+	runtime("org.codehaus.groovy:groovy:2.+")
 }
 
 task copyWiremockStandalone(type: Copy) {
@@ -55,3 +59,5 @@ task startWiremock(type: JavaExec) {
 }
 
 startWiremock.dependsOn copyWiremockStandalone
+
+bootRun.systemProperties = System.properties

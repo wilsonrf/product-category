@@ -1,7 +1,29 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+      show_sql: true
+      use_sql_comments: true
+      format_sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/product_category
+    username: product_category
+    password: QddSHQC5hzZ2x8e9
+    driver-class-name: com.mysql.jdbc.Driver
+fixer:
+  app:
+    access_key: 89915acbac76d6398edbe5452751ea7f
+    base: EUR
+  urls:
+    base: http://data.fixer.io/api/
+    latest: /latest
 oxr:
   app:
-    name: currency-converter
-    id: 1d3efa34b315486aa8a86c52a5d5f365
+    name: product-category
+    accessKey: 07742598f8964ab1ae6992c725fee6e5
     base: EUR
   urls:
     base: https://openexchangerates.org/api/

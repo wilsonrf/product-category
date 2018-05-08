@@ -3,7 +3,7 @@ package com.wilsonfranca.procuctcategory.ext.openexchangerate;
 import java.util.Map;
 
 /**
- * Created by wilson.franca on 27/02/18.
+ * Created by wilson.franca on 06/05/18.
  *
  * {
  *   "disclaimer": "https://openexchangerates.org/terms/",

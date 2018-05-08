@@ -1,6 +1,6 @@
-package com.wilsonfranca.procuctcategory.ext.openexchangerate;
+package com.wilsonfranca.procuctcategory.ext.fixer;
 
-import com.wilsonfranca.procuctcategory.configuration.OpenExchangeConfigurationProperties;
+import com.wilsonfranca.procuctcategory.configuration.FixerConfigurationProperties;
 import com.wilsonfranca.procuctcategory.currencyconverter.ConverterRate;
 import com.wilsonfranca.procuctcategory.currencyconverter.CurrencyConverterClient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,18 +11,18 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
 /**
- * Created by wilson.franca on 06/05/18.
+ * Created by wilson.franca on 08/05/18.
  */
 @Service
-public class OpenExchangeClient implements CurrencyConverterClient {
+public class FixerClient implements CurrencyConverterClient {
 
     private RestTemplate restTemplate;
 
-    private OpenExchangeConfigurationProperties configurationProperties;
+    private FixerConfigurationProperties configurationProperties;
 
     @Autowired
-    public OpenExchangeClient(@Qualifier("oxrRestTemplate") RestTemplate restTemplate,
-                              OpenExchangeConfigurationProperties configurationProperties) {
+    public FixerClient(@Qualifier("fixerRestTemplate") RestTemplate restTemplate,
+                       FixerConfigurationProperties configurationProperties) {
         this.restTemplate = restTemplate;
         this.configurationProperties = configurationProperties;
     }
@@ -31,14 +31,14 @@ public class OpenExchangeClient implements CurrencyConverterClient {
     public ConverterRate lastest(String from, String to, Double amount) {
 
         UriComponentsBuilder uriComponentsBuilder = UriComponentsBuilder.fromHttpUrl(configurationProperties.getLatestUrl())
-                .queryParam("app_id", configurationProperties.getId())
+                .queryParam("access_key", configurationProperties.getAccessKey())
                 .queryParam("symbols", to)
                 .queryParam("base", from);
 
-        ResponseEntity<OpenExchangeLatestResponse> response = restTemplate.getForEntity(uriComponentsBuilder.build().toUri(),
-                OpenExchangeLatestResponse.class);
+        ResponseEntity<FixerLatestResponse> response = restTemplate.getForEntity(uriComponentsBuilder.build().toUri(),
+                FixerLatestResponse.class);
 
-        OpenExchangeLatestResponse body = response.getBody();
+        FixerLatestResponse body = response.getBody();
 
         ConverterRate converterRate = new ConverterRate(from, to, amount, body.getRates().get(to), body.getTimestamp());
 

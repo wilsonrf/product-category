@@ -1,0 +1,851 @@
+01:09:20.500 [restartedMain] INFO  c.w.procuctcategory.Application - Starting Application on Wilsons-MacBook-Pro.local with PID 21854 (/Users/wilson/git/product-category/build/classes/main started by wilson in /Users/wilson/git/product-category)
+01:09:20.511 [restartedMain] INFO  c.w.procuctcategory.Application - No active profile set, falling back to default profiles: default
+01:09:21.002 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48544554: startup date [Tue May 08 01:09:21 BRT 2018]; root of context hierarchy
+01:09:21.981 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+01:09:25.365 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5c048f89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:09:25.488 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$f4b257c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:09:25.511 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:09:25.514 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7a8e5c08' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:09:25.530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$1986fa75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:09:25.554 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:09:26.911 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+01:09:26.973 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+01:09:27.007 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:09:27.008 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+01:09:27.242 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:09:27.243 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6241 ms
+01:09:27.718 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+01:09:27.720 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+01:09:27.721 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+01:09:27.722 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+01:09:27.724 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+01:09:27.724 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+01:09:29.291 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+01:09:29.394 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+01:09:29.638 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+01:09:29.643 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+01:09:29.648 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+01:09:29.772 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+01:09:30.144 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01:09:31.443 [restartedMain] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+01:09:32.021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:09:35.700 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48544554: startup date [Tue May 08 01:09:21 BRT 2018]; root of context hierarchy
+01:09:35.892 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategories(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:09:35.894 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.category.CategoryResource> com.wilsonfranca.procuctcategory.category.CategoryController.getCategory(java.lang.Long)
+01:09:35.895 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategory(com.wilsonfranca.procuctcategory.category.CategoryResource)
+01:09:35.896 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}/children],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategoryChildren(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:09:35.896 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}/children],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategoryChildren(java.lang.Long,com.wilsonfranca.procuctcategory.category.CategoryResource)
+01:09:35.900 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{accessKey}],methods=[DELETE]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.delete(java.lang.Long)
+01:09:35.901 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.ProductResource>> com.wilsonfranca.procuctcategory.product.ProductController.getProducts(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:09:35.903 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.ProductResource> com.wilsonfranca.procuctcategory.product.ProductController.getProduct(java.lang.Long)
+01:09:35.904 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.createProduct(com.wilsonfranca.procuctcategory.product.ProductResource)
+01:09:35.906 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.offer.OfferResource>> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffers(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:09:35.908 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.offer.OfferResource> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffer(java.lang.Long,java.lang.Long)
+01:09:35.909 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.offer.OfferController.createOffer(java.lang.Long,com.wilsonfranca.procuctcategory.product.offer.OfferResource)
+01:09:35.913 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+01:09:35.914 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+01:09:36.028 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:09:36.028 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:09:36.133 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:09:36.823 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01:09:37.019 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+01:09:37.095 [restartedMain] INFO  c.w.p.currency.CurrencyService - Starting to download rates
+01:09:37.132 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+01:09:38.343 [restartedMain] INFO  c.w.p.currency.CurrencyService - Finish to download rates
+01:09:38.382 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+01:09:38.414 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+01:09:38.445 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+01:09:38.459 [restartedMain] INFO  c.w.procuctcategory.Application - Started Application in 19.362 seconds (JVM running for 22.443)
+01:09:51.781 [Thread-10] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48544554: startup date [Tue May 08 01:09:21 BRT 2018]; root of context hierarchy
+01:09:51.789 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+01:09:51.806 [Thread-10] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+01:34:48.795 [restartedMain] INFO  c.w.procuctcategory.Application - Starting Application on Wilsons-MacBook-Pro.local with PID 22132 (/Users/wilson/git/product-category/build/classes/main started by wilson in /Users/wilson/git/product-category)
+01:34:48.804 [restartedMain] INFO  c.w.procuctcategory.Application - No active profile set, falling back to default profiles: default
+01:34:49.182 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c158ce5: startup date [Tue May 08 01:34:49 BRT 2018]; root of context hierarchy
+01:34:50.087 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+01:34:54.572 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$92c4c5dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:34:54.805 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$2b728e17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:34:54.848 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:34:54.852 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@29001215' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:34:54.988 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$504730c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:34:55.083 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:34:57.637 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+01:34:57.729 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+01:34:57.856 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:34:57.858 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+01:34:58.279 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:34:58.282 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9101 ms
+01:34:59.084 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+01:34:59.086 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+01:34:59.086 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+01:34:59.086 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+01:34:59.089 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+01:34:59.090 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+01:35:00.667 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+01:35:22.939 [restartedMain] INFO  c.w.procuctcategory.Application - Starting Application on localhost with PID 22147 (/Users/wilson/git/product-category/build/classes/main started by wilson in /Users/wilson/git/product-category)
+01:35:22.960 [restartedMain] INFO  c.w.procuctcategory.Application - The following profiles are active: production
+01:35:23.354 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@309c5255: startup date [Tue May 08 01:35:23 BRT 2018]; root of context hierarchy
+01:35:24.196 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+01:35:28.074 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$65d14fee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:35:28.219 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$fe7f1828] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:35:28.240 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:35:28.246 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@74817975' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:35:28.267 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$2353bada] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:35:28.296 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:35:29.799 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+01:35:29.841 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+01:35:29.879 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:35:29.881 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+01:35:30.099 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:35:30.100 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6746 ms
+01:35:30.783 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+01:35:30.784 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+01:35:30.785 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+01:35:30.786 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+01:35:30.789 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+01:35:30.790 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+01:35:33.035 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+01:35:33.094 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+01:35:33.373 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+01:35:33.380 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+01:35:33.398 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+01:35:33.572 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+01:35:34.006 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01:35:35.568 [restartedMain] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+01:35:36.327 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:35:41.425 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@309c5255: startup date [Tue May 08 01:35:23 BRT 2018]; root of context hierarchy
+01:35:41.670 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategories(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:35:41.673 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.category.CategoryResource> com.wilsonfranca.procuctcategory.category.CategoryController.getCategory(java.lang.Long)
+01:35:41.673 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategory(com.wilsonfranca.procuctcategory.category.CategoryResource)
+01:35:41.674 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}/children],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategoryChildren(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:35:41.675 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}/children],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategoryChildren(java.lang.Long,com.wilsonfranca.procuctcategory.category.CategoryResource)
+01:35:41.679 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{accessKey}],methods=[DELETE]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.delete(java.lang.Long)
+01:35:41.680 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.ProductResource>> com.wilsonfranca.procuctcategory.product.ProductController.getProducts(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:35:41.683 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.ProductResource> com.wilsonfranca.procuctcategory.product.ProductController.getProduct(java.lang.Long)
+01:35:41.684 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.createProduct(com.wilsonfranca.procuctcategory.product.ProductResource)
+01:35:41.686 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.offer.OfferResource>> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffers(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:35:41.690 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.offer.OfferResource> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffer(java.lang.Long,java.lang.Long)
+01:35:41.691 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.offer.OfferController.createOffer(java.lang.Long,com.wilsonfranca.procuctcategory.product.offer.OfferResource)
+01:35:41.695 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+01:35:41.696 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+01:35:41.884 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:35:41.885 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:35:42.065 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:35:42.911 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01:35:43.197 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+01:35:43.355 [restartedMain] INFO  c.w.p.currency.CurrencyService - Starting to download rates
+01:35:43.431 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+01:35:47.489 [restartedMain] WARN  c.w.p.e.o.OpenExchangeErrorHandler - Client error [org.springframework.http.client.SimpleClientHttpResponse@442c01d9]
+01:35:47.492 [restartedMain] WARN  c.w.p.c.ConverterService - Could not get the latest currency rate from EUR! We will try to use an outdated one!
+com.wilsonfranca.procuctcategory.currencyconverter.exception.UnauthorizedException: null
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeErrorHandler.handleUnauthorized(OpenExchangeErrorHandler.java:63)
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeErrorHandler.handleError(OpenExchangeErrorHandler.java:40)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:708)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:661)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:636)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:336)
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeClient.lastest(OpenExchangeClient.java:41)
+	at com.wilsonfranca.procuctcategory.currencyconverter.ConverterService.lastest(ConverterService.java:37)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService.lambda$downloadRates$1(CurrencyService.java:59)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService.downloadRates(CurrencyService.java:57)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService$$FastClassBySpringCGLIB$$de837e99.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService$$EnhancerBySpringCGLIB$$62e2d249.downloadRates(<generated>)
+	at com.wilsonfranca.procuctcategory.configuration.StarttupListener.onApplicationEvent(StarttupListener.java:24)
+	at com.wilsonfranca.procuctcategory.configuration.StarttupListener.onApplicationEvent(StarttupListener.java:12)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.wilsonfranca.procuctcategory.Application.main(Application.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+01:35:47.579 [restartedMain] INFO  c.w.p.currency.CurrencyService - Finish to download rates
+01:35:47.628 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+01:35:47.664 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+01:35:47.705 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+01:35:47.722 [restartedMain] INFO  c.w.procuctcategory.Application - Started Application in 26.521 seconds (JVM running for 30.389)
+01:37:33.487 [Thread-10] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@309c5255: startup date [Tue May 08 01:35:23 BRT 2018]; root of context hierarchy
+01:37:33.497 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+01:37:33.507 [Thread-10] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+01:37:44.736 [restartedMain] INFO  c.w.procuctcategory.Application - Starting Application on localhost with PID 22170 (/Users/wilson/git/product-category/build/classes/main started by wilson in /Users/wilson/git/product-category)
+01:37:44.747 [restartedMain] INFO  c.w.procuctcategory.Application - The following profiles are active: production
+01:37:45.035 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@308d871e: startup date [Tue May 08 01:37:45 BRT 2018]; root of context hierarchy
+01:37:45.637 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+01:37:48.189 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8cd21b52] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:37:48.347 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$257fe38c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:37:48.372 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:37:48.375 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3e43c488' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:37:48.395 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$4a54863e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:37:48.422 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:37:49.825 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+01:37:49.900 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+01:37:49.969 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:37:49.973 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+01:37:50.221 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:37:50.221 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5187 ms
+01:37:50.731 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+01:37:50.732 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+01:37:50.732 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+01:37:50.733 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+01:37:50.735 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+01:37:50.736 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+01:37:52.290 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+01:37:52.330 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+01:37:52.513 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+01:37:52.517 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+01:37:52.528 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+01:37:52.613 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+01:37:52.854 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01:37:54.083 [restartedMain] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+01:37:54.567 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:37:57.767 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@308d871e: startup date [Tue May 08 01:37:45 BRT 2018]; root of context hierarchy
+01:37:57.957 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategories(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:37:57.960 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.category.CategoryResource> com.wilsonfranca.procuctcategory.category.CategoryController.getCategory(java.lang.Long)
+01:37:57.961 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategory(com.wilsonfranca.procuctcategory.category.CategoryResource)
+01:37:57.962 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}/children],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategoryChildren(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:37:57.963 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}/children],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategoryChildren(java.lang.Long,com.wilsonfranca.procuctcategory.category.CategoryResource)
+01:37:57.966 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{accessKey}],methods=[DELETE]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.delete(java.lang.Long)
+01:37:57.967 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.ProductResource>> com.wilsonfranca.procuctcategory.product.ProductController.getProducts(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:37:57.968 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.ProductResource> com.wilsonfranca.procuctcategory.product.ProductController.getProduct(java.lang.Long)
+01:37:57.969 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.createProduct(com.wilsonfranca.procuctcategory.product.ProductResource)
+01:37:57.971 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.offer.OfferResource>> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffers(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:37:57.972 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.offer.OfferResource> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffer(java.lang.Long,java.lang.Long)
+01:37:57.973 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.offer.OfferController.createOffer(java.lang.Long,com.wilsonfranca.procuctcategory.product.offer.OfferResource)
+01:37:57.977 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+01:37:57.978 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+01:37:58.089 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:37:58.090 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:37:58.210 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:37:58.878 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01:37:59.053 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+01:37:59.117 [restartedMain] INFO  c.w.p.currency.CurrencyService - Starting to download rates
+01:37:59.151 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+01:38:01.422 [restartedMain] WARN  c.w.p.e.o.OpenExchangeErrorHandler - Client error [org.springframework.http.client.SimpleClientHttpResponse@55ce029c]
+01:38:01.427 [restartedMain] WARN  c.w.p.c.ConverterService - Could not get the latest currency rate from EUR! We will try to use an outdated one!
+com.wilsonfranca.procuctcategory.currencyconverter.exception.UnauthorizedException: null
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeErrorHandler.handleUnauthorized(OpenExchangeErrorHandler.java:63)
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeErrorHandler.handleError(OpenExchangeErrorHandler.java:40)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:708)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:661)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:636)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:336)
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeClient.lastest(OpenExchangeClient.java:41)
+	at com.wilsonfranca.procuctcategory.currencyconverter.ConverterService.lastest(ConverterService.java:37)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService.lambda$downloadRates$1(CurrencyService.java:59)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService.downloadRates(CurrencyService.java:57)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService$$FastClassBySpringCGLIB$$de837e99.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService$$EnhancerBySpringCGLIB$$b606a865.downloadRates(<generated>)
+	at com.wilsonfranca.procuctcategory.configuration.StarttupListener.onApplicationEvent(StarttupListener.java:24)
+	at com.wilsonfranca.procuctcategory.configuration.StarttupListener.onApplicationEvent(StarttupListener.java:12)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.wilsonfranca.procuctcategory.Application.main(Application.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+01:38:01.522 [restartedMain] INFO  c.w.p.currency.CurrencyService - Finish to download rates
+01:38:01.578 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+01:38:01.605 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+01:38:01.636 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+01:38:01.652 [restartedMain] INFO  c.w.procuctcategory.Application - Started Application in 17.827 seconds (JVM running for 20.492)
+01:39:16.251 [Thread-10] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@308d871e: startup date [Tue May 08 01:37:45 BRT 2018]; root of context hierarchy
+01:39:16.260 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+01:39:16.269 [Thread-10] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+01:39:38.909 [restartedMain] INFO  c.w.procuctcategory.Application - Starting Application on localhost with PID 22192 (/Users/wilson/git/product-category/build/classes/main started by wilson in /Users/wilson/git/product-category)
+01:39:38.917 [restartedMain] INFO  c.w.procuctcategory.Application - The following profiles are active: production
+01:39:39.190 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@309c5255: startup date [Tue May 08 01:39:39 BRT 2018]; root of context hierarchy
+01:39:40.163 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+01:39:43.094 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$411933b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:39:43.214 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$d9c6fbed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:39:43.243 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:39:43.247 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@13ad0cf5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:39:43.261 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$fe9b9e9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:39:43.284 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:39:44.500 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+01:39:44.551 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+01:39:44.584 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:39:44.585 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+01:39:44.811 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:39:44.811 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5622 ms
+01:39:45.319 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+01:39:45.324 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+01:39:45.324 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+01:39:45.324 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+01:39:45.328 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+01:39:45.329 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+01:39:46.954 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+01:39:46.998 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+01:39:47.181 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+01:39:47.184 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+01:39:47.188 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+01:39:47.283 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+01:39:47.567 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01:39:48.557 [restartedMain] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+01:39:49.098 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:39:52.342 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@309c5255: startup date [Tue May 08 01:39:39 BRT 2018]; root of context hierarchy
+01:39:52.517 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategories(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:39:52.520 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.category.CategoryResource> com.wilsonfranca.procuctcategory.category.CategoryController.getCategory(java.lang.Long)
+01:39:52.521 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategory(com.wilsonfranca.procuctcategory.category.CategoryResource)
+01:39:52.523 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}/children],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategoryChildren(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:39:52.524 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}/children],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategoryChildren(java.lang.Long,com.wilsonfranca.procuctcategory.category.CategoryResource)
+01:39:52.528 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{accessKey}],methods=[DELETE]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.delete(java.lang.Long)
+01:39:52.530 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.ProductResource>> com.wilsonfranca.procuctcategory.product.ProductController.getProducts(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:39:52.532 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.ProductResource> com.wilsonfranca.procuctcategory.product.ProductController.getProduct(java.lang.Long)
+01:39:52.533 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.createProduct(com.wilsonfranca.procuctcategory.product.ProductResource)
+01:39:52.536 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.offer.OfferResource>> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffers(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:39:52.538 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.offer.OfferResource> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffer(java.lang.Long,java.lang.Long)
+01:39:52.540 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.offer.OfferController.createOffer(java.lang.Long,com.wilsonfranca.procuctcategory.product.offer.OfferResource)
+01:39:52.545 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+01:39:52.546 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+01:39:52.676 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:39:52.677 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:39:52.801 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:39:53.490 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01:39:53.661 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+01:39:53.783 [restartedMain] INFO  c.w.p.currency.CurrencyService - Starting to download rates
+01:39:53.815 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+01:39:57.418 [restartedMain] WARN  c.w.p.e.o.OpenExchangeErrorHandler - Client error [Forbidden]
+01:39:57.423 [restartedMain] WARN  c.w.p.c.ConverterService - Could not get the latest currency rate from EUR! We will try to use an outdated one!
+com.wilsonfranca.procuctcategory.currencyconverter.exception.UnauthorizedException: null
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeErrorHandler.handleUnauthorized(OpenExchangeErrorHandler.java:63)
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeErrorHandler.handleError(OpenExchangeErrorHandler.java:40)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:708)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:661)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:636)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:336)
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeClient.lastest(OpenExchangeClient.java:41)
+	at com.wilsonfranca.procuctcategory.currencyconverter.ConverterService.lastest(ConverterService.java:37)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService.lambda$downloadRates$1(CurrencyService.java:59)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService.downloadRates(CurrencyService.java:57)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService$$FastClassBySpringCGLIB$$de837e99.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService$$EnhancerBySpringCGLIB$$2476b127.downloadRates(<generated>)
+	at com.wilsonfranca.procuctcategory.configuration.StarttupListener.onApplicationEvent(StarttupListener.java:24)
+	at com.wilsonfranca.procuctcategory.configuration.StarttupListener.onApplicationEvent(StarttupListener.java:12)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.wilsonfranca.procuctcategory.Application.main(Application.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+01:39:57.533 [restartedMain] INFO  c.w.p.currency.CurrencyService - Finish to download rates
+01:39:57.588 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+01:39:57.651 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+01:39:57.696 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+01:39:57.716 [restartedMain] INFO  c.w.procuctcategory.Application - Started Application in 19.93 seconds (JVM running for 22.777)
+01:40:18.204 [Thread-10] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@309c5255: startup date [Tue May 08 01:39:39 BRT 2018]; root of context hierarchy
+01:40:18.211 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+01:40:18.220 [Thread-10] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+01:41:10.855 [restartedMain] INFO  c.w.procuctcategory.Application - Starting Application on localhost with PID 22209 (/Users/wilson/git/product-category/build/classes/main started by wilson in /Users/wilson/git/product-category)
+01:41:10.862 [restartedMain] INFO  c.w.procuctcategory.Application - The following profiles are active: production
+01:41:11.163 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50952ab6: startup date [Tue May 08 01:41:11 BRT 2018]; root of context hierarchy
+01:41:11.970 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+01:41:15.684 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$17aa8571] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:41:15.976 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$b0584dab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:41:16.062 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:41:16.067 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@64b27a0c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:41:16.108 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$d52cf05d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:41:16.188 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:41:18.795 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+01:41:19.228 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+01:41:19.296 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:41:19.297 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+01:41:19.616 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:41:19.617 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8453 ms
+01:41:20.324 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+01:41:20.325 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+01:41:20.326 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+01:41:20.326 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+01:41:20.328 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+01:41:20.329 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+01:41:23.425 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+01:41:23.483 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+01:41:23.868 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+01:41:23.872 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+01:41:23.880 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+01:41:24.139 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+01:41:24.736 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01:41:26.431 [restartedMain] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+01:41:27.191 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:41:31.277 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50952ab6: startup date [Tue May 08 01:41:11 BRT 2018]; root of context hierarchy
+01:41:31.450 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategories(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:41:31.452 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.category.CategoryResource> com.wilsonfranca.procuctcategory.category.CategoryController.getCategory(java.lang.Long)
+01:41:31.452 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategory(com.wilsonfranca.procuctcategory.category.CategoryResource)
+01:41:31.453 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}/children],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategoryChildren(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:41:31.454 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}/children],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategoryChildren(java.lang.Long,com.wilsonfranca.procuctcategory.category.CategoryResource)
+01:41:31.458 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{accessKey}],methods=[DELETE]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.delete(java.lang.Long)
+01:41:31.459 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.ProductResource> com.wilsonfranca.procuctcategory.product.ProductController.getProduct(java.lang.Long)
+01:41:31.461 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.ProductResource>> com.wilsonfranca.procuctcategory.product.ProductController.getProducts(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:41:31.461 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.createProduct(com.wilsonfranca.procuctcategory.product.ProductResource)
+01:41:31.464 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.offer.OfferResource> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffer(java.lang.Long,java.lang.Long)
+01:41:31.464 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.offer.OfferResource>> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffers(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:41:31.465 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.offer.OfferController.createOffer(java.lang.Long,com.wilsonfranca.procuctcategory.product.offer.OfferResource)
+01:41:31.470 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+01:41:31.471 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+01:41:31.670 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:41:31.671 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:41:31.802 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:41:32.515 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01:41:32.647 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+01:41:32.716 [restartedMain] INFO  c.w.p.currency.CurrencyService - Starting to download rates
+01:41:32.755 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+01:41:35.326 [restartedMain] WARN  c.w.p.e.o.OpenExchangeErrorHandler - Client error [Forbidden]
+01:41:35.331 [restartedMain] WARN  c.w.p.c.ConverterService - Could not get the latest currency rate from EUR! We will try to use an outdated one!
+com.wilsonfranca.procuctcategory.currencyconverter.exception.UnauthorizedException: null
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeErrorHandler.handleUnauthorized(OpenExchangeErrorHandler.java:63)
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeErrorHandler.handleError(OpenExchangeErrorHandler.java:40)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:708)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:661)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:636)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:336)
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeClient.lastest(OpenExchangeClient.java:41)
+	at com.wilsonfranca.procuctcategory.currencyconverter.ConverterService.lastest(ConverterService.java:37)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService.lambda$downloadRates$1(CurrencyService.java:59)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService.downloadRates(CurrencyService.java:57)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService$$FastClassBySpringCGLIB$$de837e99.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService$$EnhancerBySpringCGLIB$$e373946a.downloadRates(<generated>)
+	at com.wilsonfranca.procuctcategory.configuration.StarttupListener.onApplicationEvent(StarttupListener.java:24)
+	at com.wilsonfranca.procuctcategory.configuration.StarttupListener.onApplicationEvent(StarttupListener.java:12)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.wilsonfranca.procuctcategory.Application.main(Application.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+01:41:35.445 [restartedMain] INFO  c.w.p.currency.CurrencyService - Finish to download rates
+01:41:35.502 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+01:41:35.532 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+01:41:35.574 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+01:41:35.592 [restartedMain] INFO  c.w.procuctcategory.Application - Started Application in 25.795 seconds (JVM running for 29.373)
+01:42:03.613 [Thread-10] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50952ab6: startup date [Tue May 08 01:41:11 BRT 2018]; root of context hierarchy
+01:42:03.619 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+01:42:03.628 [Thread-10] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+01:48:04.394 [restartedMain] INFO  c.w.procuctcategory.Application - Starting Application on localhost with PID 22304 (/Users/wilson/git/product-category/build/classes/main started by wilson in /Users/wilson/git/product-category)
+01:48:04.403 [restartedMain] INFO  c.w.procuctcategory.Application - The following profiles are active: production
+01:48:04.744 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2254a78f: startup date [Tue May 08 01:48:04 BRT 2018]; root of context hierarchy
+01:48:05.634 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+01:48:08.424 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1114d019] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:48:08.532 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$a9c29853] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:48:08.553 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:48:08.561 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3fa4eaec' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:48:08.580 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$ce973b05] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:48:08.606 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:48:09.947 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+01:48:09.996 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+01:48:10.033 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:48:10.034 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+01:48:10.281 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:48:10.282 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5538 ms
+01:48:10.812 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+01:48:10.813 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+01:48:10.814 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+01:48:10.814 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+01:48:10.816 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+01:48:10.817 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+01:48:12.556 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+01:48:12.608 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+01:48:12.993 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+01:48:12.998 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+01:48:13.002 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+01:48:13.120 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+01:48:13.494 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01:48:14.893 [restartedMain] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+01:48:15.575 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:48:19.591 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2254a78f: startup date [Tue May 08 01:48:04 BRT 2018]; root of context hierarchy
+01:48:19.773 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategories(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:48:19.776 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.category.CategoryResource> com.wilsonfranca.procuctcategory.category.CategoryController.getCategory(java.lang.Long)
+01:48:19.776 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategory(com.wilsonfranca.procuctcategory.category.CategoryResource)
+01:48:19.777 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}/children],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategoryChildren(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:48:19.777 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{accessKey}/children],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategoryChildren(java.lang.Long,com.wilsonfranca.procuctcategory.category.CategoryResource)
+01:48:19.781 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{accessKey}],methods=[DELETE]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.delete(java.lang.Long)
+01:48:19.782 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.ProductResource>> com.wilsonfranca.procuctcategory.product.ProductController.getProducts(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:48:19.783 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.ProductResource> com.wilsonfranca.procuctcategory.product.ProductController.getProduct(java.lang.Long)
+01:48:19.784 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.createProduct(com.wilsonfranca.procuctcategory.product.ProductResource)
+01:48:19.786 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.offer.OfferResource>> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffers(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+01:48:19.787 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer/{accessKey}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.offer.OfferResource> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffer(java.lang.Long,java.lang.Long)
+01:48:19.788 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.offer.OfferController.createOffer(java.lang.Long,com.wilsonfranca.procuctcategory.product.offer.OfferResource)
+01:48:19.793 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+01:48:19.794 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+01:48:19.929 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:48:19.929 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:48:20.053 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01:48:20.763 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01:48:21.399 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+01:48:21.464 [restartedMain] INFO  c.w.p.currency.CurrencyService - Starting to download rates
+01:48:21.499 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+01:48:22.054 [restartedMain] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+01:48:22.060 [restartedMain] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+01:48:22.063 [restartedMain] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://openexchangerates.org:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+01:48:22.087 [restartedMain] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [accessKey: 0][route: {s}->https://openexchangerates.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+01:48:22.090 [restartedMain] DEBUG o.a.h.impl.execchain.MainClientExec - Opening connection {s}->https://openexchangerates.org:443
+01:48:22.116 [restartedMain] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connecting to openexchangerates.org/52.73.174.144:443
+01:48:22.116 [restartedMain] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Connecting socket to openexchangerates.org/52.73.174.144:443 with timeout 3000
+01:48:22.568 [restartedMain] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+01:48:22.569 [restartedMain] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+01:48:22.569 [restartedMain] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Starting handshake
+01:48:23.019 [restartedMain] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Secure session established
+01:48:23.020 [restartedMain] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+01:48:23.020 [restartedMain] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+01:48:23.021 [restartedMain] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  peer principal: C=JE, ST=Jersey, L=St. Helier, O=Open Exchange Rates LTD, CN=*.openexchangerates.org
+01:48:23.021 [restartedMain] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  peer alternative names: [*.openexchangerates.org, openexchangerates.org]
+01:48:23.022 [restartedMain] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  issuer principal: EMAILADDRESS=ca@trustwave.com, CN="Trustwave Organization Validation SHA256 CA, Level 1", O="Trustwave Holdings, Inc.", L=Chicago, ST=Illinois, C=US
+01:48:23.027 [restartedMain] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connection established 192.168.1.66:60651<->52.73.174.144:443
+01:48:23.027 [restartedMain] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request GET /api/latest.json?app_id=07742598f8964ab1ae6992c725fee6e5&symbols=EUR&base=BRL HTTP/1.1
+01:48:23.028 [restartedMain] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+01:48:23.029 [restartedMain] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+01:48:23.033 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /api/latest.json?app_id=07742598f8964ab1ae6992c725fee6e5&symbols=EUR&base=BRL HTTP/1.1
+01:48:23.033 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept: application/json, application/*+json
+01:48:23.034 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: openexchangerates.org
+01:48:23.034 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+01:48:23.034 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5 (Java/1.8.0_91)
+01:48:23.034 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+01:48:23.034 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /api/latest.json?app_id=07742598f8964ab1ae6992c725fee6e5&symbols=EUR&base=BRL HTTP/1.1[\r][\n]"
+01:48:23.034 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept: application/json, application/*+json[\r][\n]"
+01:48:23.035 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: openexchangerates.org[\r][\n]"
+01:48:23.035 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+01:48:23.035 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5 (Java/1.8.0_91)[\r][\n]"
+01:48:23.035 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+01:48:23.035 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+01:48:23.242 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 403 Forbidden[\r][\n]"
+01:48:23.242 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+01:48:23.242 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+01:48:23.243 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Tue, 08 May 2018 04:48:23 GMT[\r][\n]"
+01:48:23.243 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: nginx/1.12.2[\r][\n]"
+01:48:23.243 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 261[\r][\n]"
+01:48:23.243 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+01:48:23.243 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+01:48:23.243 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "{[\n]"
+01:48:23.244 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "  "error": true,[\n]"
+01:48:23.244 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "  "status": 403,[\n]"
+01:48:23.245 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "  "message": "not_allowed",[\n]"
+01:48:23.246 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "  "description": "Changing the API `base` currency is available for Developer, Enterprise and Unlimited plan clients. Please upgrade, or contact support@openexchangerates.org with any questions."[\n]"
+01:48:23.246 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "}"
+01:48:23.251 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 403 Forbidden
+01:48:23.251 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+01:48:23.251 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+01:48:23.251 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Tue, 08 May 2018 04:48:23 GMT
+01:48:23.251 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << Server: nginx/1.12.2
+01:48:23.251 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 261
+01:48:23.252 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+01:48:23.259 [restartedMain] DEBUG o.a.h.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+01:48:23.272 [restartedMain] WARN  c.w.p.e.o.OpenExchangeErrorHandler - Client error [Forbidden]
+01:48:23.274 [restartedMain] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [accessKey: 0][route: {s}->https://openexchangerates.org:443] can be kept alive indefinitely
+01:48:23.275 [restartedMain] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [accessKey: 0][route: {s}->https://openexchangerates.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+01:48:23.281 [restartedMain] WARN  c.w.p.c.ConverterService - Could not get the latest currency rate from EUR! We will try to use an outdated one!
+com.wilsonfranca.procuctcategory.currencyconverter.exception.UnauthorizedException: null
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeErrorHandler.handleUnauthorized(OpenExchangeErrorHandler.java:63)
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeErrorHandler.handleError(OpenExchangeErrorHandler.java:40)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:708)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:661)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:636)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:336)
+	at com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeClient.lastest(OpenExchangeClient.java:41)
+	at com.wilsonfranca.procuctcategory.currencyconverter.ConverterService.lastest(ConverterService.java:37)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService.lambda$downloadRates$1(CurrencyService.java:59)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService.downloadRates(CurrencyService.java:57)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService$$FastClassBySpringCGLIB$$de837e99.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService$$EnhancerBySpringCGLIB$$5f6e60b1.downloadRates(<generated>)
+	at com.wilsonfranca.procuctcategory.configuration.StarttupListener.onApplicationEvent(StarttupListener.java:24)
+	at com.wilsonfranca.procuctcategory.configuration.StarttupListener.onApplicationEvent(StarttupListener.java:12)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.wilsonfranca.procuctcategory.Application.main(Application.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+01:48:23.384 [restartedMain] INFO  c.w.p.currency.CurrencyService - Finish to download rates
+01:48:23.433 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+01:48:23.463 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+01:48:23.495 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+01:48:23.510 [restartedMain] INFO  c.w.procuctcategory.Application - Started Application in 20.236 seconds (JVM running for 23.392)
+01:55:01.507 [Thread-10] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2254a78f: startup date [Tue May 08 01:48:04 BRT 2018]; root of context hierarchy
+01:55:01.594 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+01:55:01.613 [Thread-10] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02:19:53.551 [restartedMain] INFO  c.w.procuctcategory.Application - Starting Application on localhost with PID 22662 (/Users/wilson/git/product-category/build/classes/main started by wilson in /Users/wilson/git/product-category)
+02:19:53.563 [restartedMain] INFO  c.w.procuctcategory.Application - The following profiles are active: production
+02:19:53.881 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bae661e: startup date [Tue May 08 02:19:53 BRT 2018]; root of context hierarchy
+02:19:54.678 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+02:19:57.524 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e25fb8ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+02:19:57.630 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$7b0d80e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+02:19:57.655 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+02:19:57.659 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7c7932b9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+02:19:57.673 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$9fe22399] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+02:19:57.701 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+02:19:59.059 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+02:19:59.113 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+02:19:59.146 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+02:19:59.146 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+02:19:59.371 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+02:19:59.372 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5491 ms
+02:19:59.966 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+02:19:59.967 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+02:19:59.968 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+02:19:59.969 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+02:19:59.972 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+02:19:59.977 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+02:20:01.884 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+02:20:01.927 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+02:20:02.204 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+02:20:02.207 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+02:20:02.220 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+02:20:02.348 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+02:20:02.735 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+02:20:04.118 [restartedMain] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+02:20:04.674 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:20:08.805 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bae661e: startup date [Tue May 08 02:19:53 BRT 2018]; root of context hierarchy
+02:20:09.064 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategories(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+02:20:09.067 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{id}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.category.CategoryResource> com.wilsonfranca.procuctcategory.category.CategoryController.getCategory(java.lang.Long)
+02:20:09.067 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategory(com.wilsonfranca.procuctcategory.category.CategoryResource)
+02:20:09.068 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{id}/children],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.category.CategoryResource>> com.wilsonfranca.procuctcategory.category.CategoryController.getCategoryChildren(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+02:20:09.069 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category/{id}/children],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.category.CategoryController.createCategoryChildren(java.lang.Long,com.wilsonfranca.procuctcategory.category.CategoryResource)
+02:20:09.073 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{id}],methods=[DELETE]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.delete(java.lang.Long)
+02:20:09.074 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.ProductResource>> com.wilsonfranca.procuctcategory.product.ProductController.getProducts(org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+02:20:09.075 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{id}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.ProductResource> com.wilsonfranca.procuctcategory.product.ProductController.getProduct(java.lang.Long)
+02:20:09.076 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.ProductController.createProduct(com.wilsonfranca.procuctcategory.product.ProductResource)
+02:20:09.078 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[GET]}" onto public org.springframework.http.HttpEntity<org.springframework.hateoas.PagedResources<com.wilsonfranca.procuctcategory.product.offer.OfferResource>> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffers(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+02:20:09.078 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer/{id}],methods=[GET]}" onto public org.springframework.http.HttpEntity<com.wilsonfranca.procuctcategory.product.offer.OfferResource> com.wilsonfranca.procuctcategory.product.offer.OfferController.getOffer(java.lang.Long,java.lang.Long)
+02:20:09.079 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/{productId}/offer],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> com.wilsonfranca.procuctcategory.product.offer.OfferController.createOffer(java.lang.Long,com.wilsonfranca.procuctcategory.product.offer.OfferResource)
+02:20:09.083 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+02:20:09.084 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+02:20:09.228 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02:20:09.229 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02:20:09.447 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02:20:10.171 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+02:20:10.301 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+02:20:10.794 [restartedMain] INFO  c.w.p.currency.CurrencyService - Starting to download rates
+02:20:10.833 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+02:20:11.417 [restartedMain] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+02:20:11.424 [restartedMain] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+02:20:11.429 [restartedMain] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://data.fixer.io:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+02:20:11.468 [restartedMain] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://data.fixer.io:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+02:20:11.471 [restartedMain] DEBUG o.a.h.impl.execchain.MainClientExec - Opening connection {}->http://data.fixer.io:80
+02:20:11.501 [restartedMain] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connecting to data.fixer.io/198.23.101.146:80
+02:20:11.701 [restartedMain] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connection established 192.168.1.66:60799<->198.23.101.146:80
+02:20:11.702 [restartedMain] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request GET /api/latest?access_key=89915acbac76d6398edbe5452751ea7f&symbols=EUR&base=BRL HTTP/1.1
+02:20:11.702 [restartedMain] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+02:20:11.706 [restartedMain] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+02:20:11.709 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /api/latest?access_key=89915acbac76d6398edbe5452751ea7f&symbols=EUR&base=BRL HTTP/1.1
+02:20:11.710 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept: application/json, application/*+json
+02:20:11.711 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: data.fixer.io
+02:20:11.711 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+02:20:11.711 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5 (Java/1.8.0_91)
+02:20:11.712 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+02:20:11.713 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /api/latest?access_key=89915acbac76d6398edbe5452751ea7f&symbols=EUR&base=BRL HTTP/1.1[\r][\n]"
+02:20:11.716 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept: application/json, application/*+json[\r][\n]"
+02:20:11.717 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: data.fixer.io[\r][\n]"
+02:20:11.717 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+02:20:11.717 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5 (Java/1.8.0_91)[\r][\n]"
+02:20:11.718 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+02:20:11.718 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+02:20:12.251 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+02:20:12.251 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: nginx[\r][\n]"
+02:20:12.251 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Tue, 08 May 2018 05:20:11 GMT[\r][\n]"
+02:20:12.251 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; Charset=UTF-8[\r][\n]"
+02:20:12.251 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+02:20:12.251 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Apilayer-Transaction-Id: da7471d2-ae89-4e18-800f-95ef583536f4[\r][\n]"
+02:20:12.251 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "Etag: 7d66ba82c2aa525285346e332298bf30[\r][\n]"
+02:20:12.252 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+02:20:12.252 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Request-Time: 0.022[\r][\n]"
+02:20:12.252 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+02:20:12.252 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "4f[\r][\n]"
+02:20:12.252 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "{"success":false,"error":{"code":105,"type":"base_currency_access_restricted"}}[\r][\n]"
+02:20:12.252 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+02:20:12.252 [restartedMain] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+02:20:12.257 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+02:20:12.257 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << Server: nginx
+02:20:12.257 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Tue, 08 May 2018 05:20:11 GMT
+02:20:12.257 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; Charset=UTF-8
+02:20:12.258 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+02:20:12.258 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << X-Apilayer-Transaction-Id: da7471d2-ae89-4e18-800f-95ef583536f4
+02:20:12.258 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << Etag: 7d66ba82c2aa525285346e332298bf30
+02:20:12.258 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+02:20:12.258 [restartedMain] DEBUG org.apache.http.headers - http-outgoing-0 << X-Request-Time: 0.022
+02:20:12.269 [restartedMain] DEBUG o.a.h.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+02:20:12.304 [restartedMain] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://data.fixer.io:80] can be kept alive indefinitely
+02:20:12.305 [restartedMain] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://data.fixer.io:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+02:20:12.318 [restartedMain] WARN  c.w.p.c.ConverterService - Could not get the latest currency rate from EUR! We will try to use an outdated one!
+java.lang.NullPointerException: null
+	at com.wilsonfranca.procuctcategory.ext.fixer.FixerClient.lastest(FixerClient.java:43)
+	at com.wilsonfranca.procuctcategory.currencyconverter.ConverterService.lastest(ConverterService.java:36)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService.lambda$downloadRates$1(CurrencyService.java:59)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService.downloadRates(CurrencyService.java:57)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService$$FastClassBySpringCGLIB$$de837e99.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.wilsonfranca.procuctcategory.currency.CurrencyService$$EnhancerBySpringCGLIB$$10827b74.downloadRates(<generated>)
+	at com.wilsonfranca.procuctcategory.configuration.StarttupListener.onApplicationEvent(StarttupListener.java:24)
+	at com.wilsonfranca.procuctcategory.configuration.StarttupListener.onApplicationEvent(StarttupListener.java:12)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.wilsonfranca.procuctcategory.Application.main(Application.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+02:20:12.403 [restartedMain] INFO  c.w.p.currency.CurrencyService - Finish to download rates
+02:20:12.448 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+02:20:12.481 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+02:20:12.512 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+02:20:12.525 [restartedMain] INFO  c.w.procuctcategory.Application - Started Application in 20.044 seconds (JVM running for 24.329)
+02:21:05.171 [Thread-10] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bae661e: startup date [Tue May 08 02:19:53 BRT 2018]; root of context hierarchy
+02:21:05.177 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+02:21:05.184 [Thread-10] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

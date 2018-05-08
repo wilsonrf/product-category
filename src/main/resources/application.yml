@@ -17,7 +17,7 @@ spring:
 oxr:
   app:
     name: currency-converter
-    id: 1d3efa34b315486aa8a86c52a5d5f365
+    accessKey: 1d3efa34b315486aa8a86c52a5d5f365
     base: EUR
   urls:
     base: http://localhost:9090/
