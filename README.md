@@ -36,6 +36,10 @@ docker run --name mariadb -e MYSQL_ROOT_PASSWORD=B4kJqnjVc4FLavFT -e MYSQL_DATAB
 #### Choose the client
 You ***must*** choose the external currency converter client:
 <br/>
+##### Run with Currency Converter API
+```
+gradle bootRun -Dspring.profiles.active=production -Dclient=cca
+```
 ##### Run with Fixer
 ```
 gradle bootRun -Dspring.profiles.active=production -Dclient=fixer

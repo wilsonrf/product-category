@@ -1,6 +1,7 @@
 package com.wilsonfranca.procuctcategory.configuration;
 
 import com.wilsonfranca.procuctcategory.currencyconverter.CurrencyConverterClient;
+import com.wilsonfranca.procuctcategory.ext.currencyconverterapi.CurrencyConverterApiClient;
 import com.wilsonfranca.procuctcategory.ext.fixer.FixerClient;
 import com.wilsonfranca.procuctcategory.ext.openexchangerate.OpenExchangeClient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,9 @@ public class CurrencyConverterClientConfiguration {
     @Autowired
     FixerClient fixerClient;
 
+    @Autowired
+    CurrencyConverterApiClient currencyConverterApiClient;
+
     @Bean(name = "currencyConverterClient")
     @Conditional(OpenExchangeCondition.class)
     public CurrencyConverterClient openExchange() {
@@ -29,5 +33,9 @@ public class CurrencyConverterClientConfiguration {
     @Bean(name = "currencyConverterClient")
     @Conditional(FixerCondition.class)
     public CurrencyConverterClient fixer() { return fixerClient; }
+
+    @Bean(name = "currencyConverterClient")
+    @Conditional(CurrencyConvertApiClientCondition.class)
+    public CurrencyConverterApiClient cca() { return  currencyConverterApiClient; }
 
 }

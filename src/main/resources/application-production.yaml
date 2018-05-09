@@ -13,6 +13,7 @@ spring:
     username: product_category
     password: QddSHQC5hzZ2x8e9
     driver-class-name: com.mysql.jdbc.Driver
+
 fixer:
   app:
     access_key: 89915acbac76d6398edbe5452751ea7f
@@ -20,6 +21,7 @@ fixer:
   urls:
     base: http://data.fixer.io/api/
     latest: /latest
+
 oxr:
   app:
     name: product-category
@@ -31,3 +33,10 @@ oxr:
     historical: /historical/%s.json
     currencies: /currencies.json
     convert: /convert
+
+cca:
+  app:
+    base: EUR
+  urls:
+    base: https://free.currencyconverterapi.com/api/v5
+    latest: /convert

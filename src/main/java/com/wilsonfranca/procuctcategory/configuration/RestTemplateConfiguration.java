@@ -34,6 +34,12 @@ public class RestTemplateConfiguration {
         return restTemplate;
     }
 
+    @Bean(name = "ccaRestTemplate")
+    RestTemplate ccaRestemplate() {
+        RestTemplate restTemplate = new RestTemplate(getRequestFactory());
+        return restTemplate;
+    }
+
     private ClientHttpRequestFactory getRequestFactory(){
         RequestConfig requestConfig = RequestConfig.custom()
                 .setCookieSpec(CookieSpecs.IGNORE_COOKIES)
